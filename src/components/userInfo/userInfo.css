@@ -1,0 +1,38 @@
+.userInfo {
+    border: 1px solid #ccc;
+    padding: 15px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 250px;
+    height: auto;
+    margin-top: -100px;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 30px 5px;
+}
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+h1 {
+    font-family: inherit;
+}
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+a:visited {
+    color: black;
+
+}
+a:hover {
+    text-decoration: underline;
+}
+ul {
+    list-style-type: circle;
+}
+li {
+    font-weight: bolder;
+}

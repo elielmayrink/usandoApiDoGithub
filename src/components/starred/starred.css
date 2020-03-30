@@ -1,0 +1,15 @@
+.starred {
+    box-shadow: 1px 1px 1px black;
+    border-radius: 30px;
+    margin-top: -50px;
+    margin-left: 15px;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    position: relative;
+}
+.btnClosedFav {
+    position: absolute;
+    left: 270px;
+    cursor: pointer;
+}

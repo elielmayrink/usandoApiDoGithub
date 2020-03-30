@@ -1,0 +1,106 @@
+.App {
+  display: grid;
+  grid-template-columns: repeat(3fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  width: 1000px;
+  background-color: azure;
+  padding: 15px;
+  position: relative;
+}
+.loading {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+@media (max-width: 1053px) {
+
+  .App {
+    width: 700px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .search {
+    grid-column-start: 1;
+  }
+  .repos-div {
+    grid-row-start: 2;
+    margin-top: -50px;
+    padding: 0px;
+  }
+  .btnClosedRepos {
+    left: 220px;
+  }
+  .btn-repos {
+    grid-row-start: 2;
+    margin-top: -100px;
+  }
+  .starred {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-top: -50px;
+    position: absolute;
+  }
+  .btnClosedFav {
+    left: 200px;
+  }
+  .btn-fav {
+    position: absolute;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-top: -100px;
+    left: 150px;
+  }
+  .userInfo {
+    grid-row-start: 2;
+    margin-top: -100px;
+  }
+}
+@media (max-width: 750px) {
+  .App {
+    width: 350px;
+    grid-template-columns: 1fr;
+    height: 1500px;
+  }
+  .loading {
+    margin-top: 50px;
+  }
+  .btn-repos {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    margin-top: 30px;
+    position: absolute;
+    top: -200px;
+  }
+  .repos-div {
+    position: absolute;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    margin-top: 60px;
+    top:-450px
+  }
+  .btn-fav {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    position: absolute;
+    top: -70px;
+    left: 100px;
+  }
+  .starred {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    margin-top: 60px;
+    position: absolute;
+    top: -450px;
+  }
+  .userInfo {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 75px;
+  }
+  .search {
+    grid-row-start: 1;
+    margin-top: -25px;
+  }
+}
